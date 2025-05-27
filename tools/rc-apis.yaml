@@ -1,0 +1,30 @@
+identity:
+  name: rc-apis
+  author: rongcloud
+  label:
+    en_US: rc-apis
+    zh_Hans: rc-apis
+    pt_BR: rc-apis
+description:
+  human:
+    en_US: 快速集成融云 Server API 接口
+    zh_Hans: 快速集成融云 Server API 接口
+    pt_BR: 快速集成融云 Server API 接口
+  llm: 快速集成融云 Server API 接口
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: 快速集成融云 Server API 接口
+      zh_Hans: 快速集成融云 Server API 接口
+      pt_BR: 快速集成融云 Server API 接口
+    llm_description: 快速集成融云 Server API 接口
+    form: llm
+extra:
+  python:
+    source: tools/rc-apis.py
