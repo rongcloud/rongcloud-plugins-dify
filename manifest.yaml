@@ -1,18 +1,14 @@
-version: 0.0.1
+version: 0.1.0
 type: plugin
 author: rongcloud
-name: rc-apis
+name: rongcloud-plugins
 label:
-  en_US: rc-apis
-  ja_JP: rc-apis
-  zh_Hans: rc-apis
-  pt_BR: rc-apis
+  en_US: RongCloud Plugins
+  zh_Hans: RongCloud Plugins
 description:
-  en_US: 快速集成融云 Server API 接口
-  ja_JP: 快速集成融云 Server API 接口
+  en_US: Quickly integrate RongCloud Server API interfaces
   zh_Hans: 快速集成融云 Server API 接口
-  pt_BR: 快速集成融云 Server API 接口
-icon: icon.svg
+icon: rongcloud_logo.svg
 resource:
   memory: 268435456
   permission:
@@ -37,9 +33,9 @@ resource:
       size: 1048576
 plugins:
   tools:
-    - provider/rc-apis.yaml
+    - provider/rongcloud_plugins.yaml
 meta:
-  version: 0.0.1
+  version: 0.1.0
   arch:
     - amd64
     - arm64
