@@ -17,7 +17,7 @@ class RegisterUserTool(Tool):
     """
     
     def _invoke(self, tool_parameters: Dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        """Call get token interface
+        """Call register user interface
         
         Args:
             tool_parameters: Tool parameters, including:

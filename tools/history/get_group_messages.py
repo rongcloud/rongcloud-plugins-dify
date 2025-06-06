@@ -18,16 +18,13 @@ class GetGroupMessagesTool(Tool):
     """
     
     def _invoke(self, tool_parameters: Dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        """Call get token interface
+        """Call get group messages interface
         
         Args:
             tool_parameters: Tool parameters, including:
-                - parameters.user_id: User ID (required)
-                - parameters.targetId: Target ID (required)
-                - parameters.start_time: Start time (required)
-                - parameters.end_time: End time (required)
-                - parameters.page_size: Page size (optional)
-                - parameters.include_start_time: Include start time (required)
+                - parameters.target_id: Group ID (required)
+                - parameters.data_time: Data time (required)
+                - parameters.size: Message size (required)
                 
         Yields:
             ToolInvokeMessage: Tool call message with execution result

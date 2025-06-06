@@ -17,7 +17,7 @@ class CreateGroupTool(Tool):
     """
     
     def _invoke(self, tool_parameters: Dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        """Call get token interface
+        """Call create group interface
         
         Args:
             tool_parameters: Tool parameters, including:

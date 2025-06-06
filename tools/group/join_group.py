@@ -12,18 +12,17 @@ logger = logging.getLogger(__name__)
 class JoinGroupTool(Tool):
     """Join RongCloud group tool class
     
-    Used to join RongCloud group, need to provide user ID, group ID and group name.
+    Used to join RongCloud group, need to provide member IDs and group ID.
     The tool will return success or failed.
     """
     
     def _invoke(self, tool_parameters: Dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        """Call get token interface
+        """Call join group interface
         
         Args:
             tool_parameters: Tool parameters, including:
-                - parameters.user_id: User ID (required)
+                - parameters.member_ids: Member IDs to join the group (required)
                 - parameters.group_id: Group ID (required)
-                - parameters.group_name: Group name 
                 
         Yields:
             ToolInvokeMessage: Tool call message with execution result

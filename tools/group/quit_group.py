@@ -17,13 +17,12 @@ class QuitGroupTool(Tool):
     """
     
     def _invoke(self, tool_parameters: Dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        """Call get token interface
+        """Call quit group interface
         
         Args:
             tool_parameters: Tool parameters, including:
                 - parameters.user_id: User ID (required)
                 - parameters.group_id: Group ID (required)
-                - parameters.group_name: Group name 
                 
         Yields:
             ToolInvokeMessage: Tool call message with execution result

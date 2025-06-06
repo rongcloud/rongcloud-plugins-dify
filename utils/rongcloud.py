@@ -1,3 +1,27 @@
+"""
+MIT License
+
+Copyright (c) 2024 RongCloud Dify Plugin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+
 import hashlib
 import json
 import logging
@@ -111,8 +135,21 @@ class RongCloudAPI:
                 timeout=timeout
             )
             
-            if not result.json():
-                raise Exception("request failed")
+            # Check HTTP status code
+            if result.status_code != 200:
+                error_msg = f"HTTP {result.status_code}: {result.text}"
+                logger.error(f"Request failed: endpoint={endpoint}, {error_msg}")
+                raise Exception(f"Request failed: {error_msg}")
+            
+            # Check if response is valid JSON
+            try:
+                response_data = result.json()
+                if not response_data:
+                    raise Exception("Empty response from server")
+            except ValueError as e:
+                error_msg = f"Invalid JSON response: {str(e)}"
+                logger.error(f"JSON parse error: endpoint={endpoint}, {error_msg}")
+                raise Exception(error_msg)
             
             return result
         except requests.RequestException as e:
