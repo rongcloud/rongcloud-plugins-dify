@@ -1,5 +1,7 @@
 # RongCloud Plugins
 
+🔗 **GitHub 仓库**: [https://github.com/rongcloud/rongcloud-plugins-dify](https://github.com/rongcloud/rongcloud-plugins-dify)
+
 ## 项目简介
 
 RongCloud Plugins 是一个 Dify 插件，用于快速集成融云 Server API 接口。通过该插件，您可以轻松地在 Dify 应用中实现融云的各种功能，如发送消息、获取用户 Token 等。
@@ -69,6 +71,7 @@ RongCloud Plugins 是一个 Dify 插件，用于快速集成融云 Server API �
 
 如有问题，请联系：
 - 邮箱：huhangtao@rongcloud.cn
+- GitHub 仓库：https://github.com/rongcloud/rongcloud-plugins-dify
 - 融云技术支持：https://www.rongcloud.cn/support
 
 ## 许可证
