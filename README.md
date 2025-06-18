@@ -58,7 +58,7 @@ RongCloud Plugins is a Dify plugin designed for quick integration with RongCloud
 
 ## Version History
 
-### v0.1.0 (2024-03-05)
+### v0.1.0
 - Initial version release
 - Support for user management features
 - Support for message management features
