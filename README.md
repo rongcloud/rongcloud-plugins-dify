@@ -72,7 +72,7 @@ RongCloud Plugins is a Dify plugin designed for quick integration with RongCloud
 For any issues, please contact:
 - Email: huhangtao@rongcloud.cn
 - GitHub Repository: https://github.com/rongcloud/rongcloud-plugins-dify
-- RongCloud Technical Support: https://www.rongcloud.cn/support
+- RongCloud Technical Support: https://console.rongcloud.cn/agile/formwork/ticket
 
 ## License
 
