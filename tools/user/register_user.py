@@ -23,7 +23,6 @@ class RegisterUserTool(Tool):
             tool_parameters: Tool parameters, including:
                 - parameters.user_id: User ID (required)
                 - parameters.name: User name (required)
-                - parameters.portrait_uri: User portrait URI (required)
                 
         Yields:
             ToolInvokeMessage: Tool call message with execution result
@@ -45,12 +44,13 @@ class RegisterUserTool(Tool):
             
         if not tool_parameters.get('name'):
             raise Exception("Missing required parameter: name")
-            
-        if not tool_parameters.get('portrait_uri'):
-            raise Exception("Missing required parameter: portrait_uri")
         
-        return {
+        result = {
             "userId": tool_parameters['user_id'],
             "name": tool_parameters['name'],
-            "portraitUri": tool_parameters['portrait_uri']
         }
+        
+        if "portrait_uri" in tool_parameters:
+            result['portraitUri'] = tool_parameters['portrait_uri']
+            
+        return result
