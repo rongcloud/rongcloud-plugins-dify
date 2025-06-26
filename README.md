@@ -2,9 +2,13 @@
 
 🔗 **GitHub Repository**: [https://github.com/rongcloud/rongcloud-plugins-dify](https://github.com/rongcloud/rongcloud-plugins-dify)
 
-## Project Introduction
+## Overview
 
-RongCloud Plugins is a Dify plugin designed for quick integration with RongCloud Server API. Through this plugin, you can easily implement various RongCloud features in your Dify applications, such as sending messages, obtaining user tokens, and more.
+RongCloud (Beijing Yunzhong Rongxin Network Technology Co., Ltd.) is a leading global provider of intelligent cloud communication services. Our professional and secure PaaS and SaaS solutions empower developers and enterprises to drive digital transformation, creating new application scenarios and unlocking business value in the digital world.
+
+Founded in 2015, our core team, hailing from China Mobile's Fetion, brings nearly two decades of experience in the cloud communication industry. We have built a global network spanning 245 countries and regions, supported by multiple data centers and thousands of acceleration nodes. This powerful infrastructure supports hundreds of millions of concurrent users and handles a daily volume of hundreds of billions of messages.
+
+The RongCloud Plugin for Dify enables seamless integration with the RongCloud server API. This allows you to easily implement a wide range of RongCloud's features into your Dify applications, such as sending messages, retrieving user tokens, and more.
 
 ## Features
 

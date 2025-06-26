@@ -2,7 +2,10 @@
 
 🔗 **GitHub 仓库**: [https://github.com/rongcloud/rongcloud-plugins-dify](https://github.com/rongcloud/rongcloud-plugins-dify)
 
-## 项目简介
+## 概述
+
+北京云中融信网络科技有限公司（简称“融云”），是全球智能通信云服务领创品牌，为全球数字化建设提供专业、安全、智能的互联网云通信 PaaS 和 SaaS 等产品，赋能开发者和企业的创新能力，在数字化领域不断创造新的应用场景和商业价值。
+融云成立于 2015 年，核心团队来自中国移动飞信团队，拥有近 20 年的通信云行业经验。在全球范围内，融云累积多年打造了一张覆盖 245 个国家及地区的通信云网络，设立了多个海外数据中心以及数千加速节点，支持亿级用户的同时在线和日数千亿级的消息分发能力。
 
 RongCloud Plugins 是一个 Dify 插件，用于快速集成融云 Server API 接口。通过该插件，您可以轻松地在 Dify 应用中实现融云的各种功能，如发送消息、获取用户 Token 等。
 
@@ -72,7 +75,8 @@ RongCloud Plugins 是一个 Dify 插件，用于快速集成融云 Server API �
 如有问题，请联系：
 - 邮箱：huhangtao@rongcloud.cn
 - GitHub 仓库：https://github.com/rongcloud/rongcloud-plugins-dify
-- 融云技术支持：https://www.rongcloud.cn/support
+- 融云技术支持：https://console.rongcloud.cn/agile/formwork/ticket
+
 
 ## 许可证
 
