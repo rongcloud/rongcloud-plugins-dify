@@ -35,7 +35,7 @@ import requests
 logger = logging.getLogger(__name__)
 
 # 版本号
-RC_PLUGIN_VERSION = '0.1.0'
+RC_PLUGIN_VERSION = '0.1.1'
 
 class RongCloudAPIToolProvider(ToolProvider):
     """融云 API 工具提供者类

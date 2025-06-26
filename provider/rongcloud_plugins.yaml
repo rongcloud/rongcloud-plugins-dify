@@ -7,7 +7,7 @@ identity:
     en_US: Quickly integrate RongCloud Server API interfaces
     zh_Hans: 快速集成融云 Server API 插件
   icon: rongcloud_logo.svg
-  version: 0.1.0
+  version: 0.1.1
   author: Dify
   homepage: https://www.rongcloud.cn/
   license: MIT
